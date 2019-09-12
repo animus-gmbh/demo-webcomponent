@@ -25,16 +25,17 @@ export class AppComponent implements OnInit {
     if (!this.scriptLoaded) {
       this.scriptLoaded = true;
       const script = document.createElement('script');
-      script.src = 'assets/main.4c7a10ec459e54d52a56.js'; // or any other external js file
+      script.src = 'assets/main.2d11822aaff7f5ea352b.js'; // or any other external js file
       script.crossOrigin = 'anonymous';
       script.type = 'text/javascript';
       // shasum -b -a 384 FILENAME.js | awk '{ print $1 }' | xxd -r -p | base64
-      script.integrity = 'sha384-47+lPaIRihBT7bcfKb9E/n32N/ogUxzhA6abhctfF8d4NLMPO4QOqYguDWpA0iBa';
+      script.integrity = 'sha384-txw1mEUoaTzDrQfs24KlsR/nK8SndayYKKZBKI2nXZ/mhs6CTpJ7KJilvSk942kU';
       document.body.appendChild(script);
     }
 
     // add web component
     this.component = document.createElement('custom-element');
+    this.component.setAttribute('title', 'Hello Animus!');
     const content = this.content.nativeElement;
     content.appendChild(this.component);
 
