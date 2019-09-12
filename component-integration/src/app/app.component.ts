@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
     if (!this.scriptLoaded) {
       this.scriptLoaded = true;
       const script = document.createElement('script');
-      script.src = 'http://127.0.0.1:4200/assets/main.4c7a10ec459e54d52a56.js';
+      script.src = 'assets/main.4c7a10ec459e54d52a56.js'; // or any other external js file
       script.crossOrigin = 'anonymous';
       script.type = 'text/javascript';
       // shasum -b -a 384 FILENAME.js | awk '{ print $1 }' | xxd -r -p | base64
