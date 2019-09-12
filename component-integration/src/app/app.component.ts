@@ -25,11 +25,11 @@ export class AppComponent implements OnInit {
     if (!this.scriptLoaded) {
       this.scriptLoaded = true;
       const script = document.createElement('script');
-      script.src = 'http://127.0.0.1:4200/assets/main.545bafbdafc788cfd766.js';
+      script.src = 'http://127.0.0.1:4200/assets/main.4c7a10ec459e54d52a56.js';
       script.crossOrigin = 'anonymous';
       script.type = 'text/javascript';
       // shasum -b -a 384 FILENAME.js | awk '{ print $1 }' | xxd -r -p | base64
-      script.integrity = 'sha384-LUK+kmGwCSR+Ps5aKyK4jSqeO7RbOfzV4mNy4y9nIy2yb3Jr9yBfOB2Ph6+PyBhE';
+      script.integrity = 'sha384-47+lPaIRihBT7bcfKb9E/n32N/ogUxzhA6abhctfF8d4NLMPO4QOqYguDWpA0iBa';
       document.body.appendChild(script);
     }
 

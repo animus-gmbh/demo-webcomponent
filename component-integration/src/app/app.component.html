@@ -1,7 +1,9 @@
 
-<button (click)="loadWebComponent()">Load Web-Component</button>
-<button (click)="removeWebComponent()">Unload Web-Component</button>
+<div class="p-2">
+  <button type="button" class="btn btn-secondary m-2" (click)="loadWebComponent()">Load Web-Component</button>
+  <button type="button" class="btn btn-secondary m-2" (click)="removeWebComponent()">Unload Web-Component</button>
+</div>
 
-<div class="external-component">
+<div class="container">
   <div #content></div>
 </div>
